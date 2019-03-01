@@ -1,6 +1,6 @@
 #!/usr/bin/env groovy
 
-def runExe(String path) {
+def call(String path) {
   echo "Hello, ${path}"
   def sout = new StringBuilder(), serr = new StringBuilder()
   def args = ['cmd', "${path}"]
