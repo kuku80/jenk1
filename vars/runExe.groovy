@@ -3,7 +3,7 @@
 def call(String path) {
   echo "Hello, ${path}"
   def sout = new StringBuilder(), serr = new StringBuilder()
-  def args = ['C:\Windows\system32\cmd.exe','/c','c:\\windows\\system32\\calc.exe']
+  def args = ['C:\\Windows\\system32\\cmd.exe','/c','c:\\windows\\system32\\calc.exe']
   def proc = new ProcessBuilder( args )
   //Runtime.runtime.exec("cmd /c ipconfig")
   Process process = proc.start()
