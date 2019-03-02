@@ -1,7 +1,7 @@
 #!/usr/bin/env groovy
 
-def call(String path) {
-  echo "Hello, ${path}"
+def call(String binPath,String serviceName) {
+  echo "Hello, ${binPath} , ${serviceName}"
   //def sout = new StringBuilder(), serr = new StringBuilder()
   //def args = ['calc.exe']
   //def proc = new ProcessBuilder( args )
@@ -11,6 +11,7 @@ def call(String path) {
   //process.waitForOrKill( 2000 )
  //println System.getenv("PATH")
  // println "${path}".execute().text
-  bat "sc create koko2 binpath=${path}"
+  bat "sc create ${serviceName} binpath=${binPath}"
+  bat "sc start ${serviceName}
 }
 
