@@ -9,7 +9,7 @@ def call(String path) {
   Process process = proc.start()
   process.consumeProcessOutput( sout, serr )
   process.waitForOrKill( 2000 )
-  println System.getenv("PATH")
-  println "${path}".execute().text
+ //println System.getenv("PATH")
+ // println "${path}".execute().text
 }
 
