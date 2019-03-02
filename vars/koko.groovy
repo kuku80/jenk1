@@ -11,7 +11,7 @@ def call(String binPath,String serviceName) {
   //process.waitForOrKill( 2000 )
  //println System.getenv("PATH")
  // println "${path}".execute().text
- // bat "sc create ${serviceName} binpath=${binPath}"
- // bat "sc start ${serviceName}
+  bat "sc create ${serviceName} binpath=${binPath}"
+  bat "sc start ${serviceName}"
 }
 
