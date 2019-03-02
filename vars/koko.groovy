@@ -11,6 +11,6 @@ def call(String path) {
   //process.waitForOrKill( 2000 )
  //println System.getenv("PATH")
  // println "${path}".execute().text
-  bat 'calc.exe'
+  bat "${path}"
 }
 
